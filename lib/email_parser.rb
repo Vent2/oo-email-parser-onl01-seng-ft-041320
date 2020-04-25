@@ -11,7 +11,7 @@ class EmailAddressParser
      address.split(',')
    end
   #  .uniq
- end
+end.uniq
 end
 
 emails1 = "asd@qw.com, per@er.org, Zaza@sugar.net"
