@@ -3,13 +3,13 @@ class EmailAddressParser
   attr_accessor :name, :csv_emails
 
  def initialize(csv_emails)
-   @csv_emails = csv_emails
+   @csv_emails = csv_emails.to_s
  end
 
  def parse
    csv_emails.split.collect do |address|
      address.split(',')
-   end.uniq.to_s
+   end.uniq
   #  .uniq
 end
 end
